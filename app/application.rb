@@ -22,7 +22,7 @@ class Application
           resp.write "#{cart_item}\n"
         end 
     elsif req.path.match(/add/) 
-      add_term = req.params[:item]
+      add_term = req.params["item"]
          @@items.each do |item|
            if item == add_term
              @@cart << add_term
