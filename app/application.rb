@@ -23,8 +23,7 @@ class Application
         end 
     elsif req.path.match(/add/) 
       add_term = req.params["item"]
-         @@items.each do |item|
-           if item == add_term
+         item == add_term
              @@cart << add_term
           end 
         end     
